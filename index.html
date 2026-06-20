@@ -63,12 +63,16 @@
   <h2>Contact</h2>
   <div class="ctrow">
     <div class="info2">상담은 편하게 연락 주세요.<br><br>010-0000-0000<br>thatchedstudio@naver.com<br>kakaotalk @태치드<br>instagram @thatched__studio</div>
-    <!-- 폼 전송: 가입 후 Formspree 무료 endpoint로 action 한 줄만 교체하면 이메일 수신됨 -->
-    <form class="form" action="https://formspree.io/f/REPLACE_ID" method="POST">
-      <input name="name" placeholder="이름" required>
-      <input name="contact" placeholder="연락처" required>
-      <input name="site" placeholder="현장 위치 · 예상 예산">
-      <textarea name="message" placeholder="문의 내용"></textarea>
+    <!-- FormSubmit (무료) → thatchedstudio@naver.com 으로 문의 수신. 첫 제출 시 확인메일 1회 클릭으로 활성화. -->
+    <form class="form" action="https://formsubmit.co/thatchedstudio@naver.com" method="POST">
+      <input type="hidden" name="_subject" value="[홈페이지] 새 상담 문의가 도착했어요">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="true">
+      <input type="hidden" name="_next" value="https://thatchedstudio.kr/">
+      <input name="이름" placeholder="이름" required>
+      <input name="연락처" placeholder="연락처" required>
+      <input name="현장위치·예상예산" placeholder="현장 위치 · 예상 예산">
+      <textarea name="문의내용" placeholder="문의 내용"></textarea>
       <button type="submit">상담 신청 보내기</button>
     </form>
   </div>
