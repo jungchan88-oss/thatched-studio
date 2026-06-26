@@ -5,7 +5,10 @@
 html{scroll-behavior:smooth}
 body{font-family:"EB Garamond",serif;color:var(--ink);background:var(--cream);background-image:url('assets/paper.png');background-size:360px;background-blend-mode:multiply;font-weight:400}
 a{color:inherit;text-decoration:none}
-.img{background-position:center;background-size:cover;background-repeat:no-repeat}
+.img,.im{background-position:center;background-size:cover;background-repeat:no-repeat}
+/* 상세 갤러리: 자르지 않고 사진 전체 노출(아임웹처럼 세로 스택) */
+.dh2{display:block;width:100%;height:auto;margin-top:34px}
+.gal img.gimg{display:block;width:100%;height:auto;margin-bottom:16px}
 .page{max-width:1040px;margin:0 auto;padding:84px 40px}
 .rule{height:1px;background:var(--rule);max-width:1040px;margin:0 auto}
 .tiny{font-size:9.5px;letter-spacing:.18em;color:var(--faint);text-transform:uppercase}
