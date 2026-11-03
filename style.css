@@ -66,3 +66,4 @@ h1,h2{font-family:var(--serif);font-optical-sizing:auto;font-weight:400;letter-s
 
 /* Only the selected new-building teaser photograph uses a landscape crop. */
 .coming-feature img{width:100%;height:auto;aspect-ratio:4/3;max-height:none;object-fit:cover;object-position:50% 48%}.newbuild-detail .focus-gallery figure:first-child .photo-open{width:100%;max-width:1120px}.newbuild-detail .focus-gallery figure:first-child img{width:100%;height:auto;aspect-ratio:4/3;max-height:none;object-fit:cover;object-position:50% 48%}.archive-grid a[href^="p-sogyeonggye-newbuild"] img{object-position:50% 48%}
+.photo-viewer img[src*="door-reflection.jpg"]{width:min(100%,calc((100dvh - 175px)*4/3));height:auto;aspect-ratio:4/3;max-height:none;object-fit:cover;object-position:50% 48%}
