@@ -127,3 +127,11 @@ a{color:inherit;text-decoration:none}
   .desc{font-size:15px;margin:34px auto;padding:0 22px}
   .pn{flex-direction:column;gap:10px;padding:24px 22px}
 }
+
+/* Project content synchronized from the published Imweb portfolio. */
+.imweb-project{max-width:1000px;margin:0 auto;padding:36px 30px 80px;box-sizing:border-box}
+.imweb-heading{margin:0 0 38px}.imweb-heading h1{font-size:28px;font-weight:400;letter-spacing:.06em;line-height:1.5;overflow-wrap:anywhere}
+.imweb-content{font-size:14px;line-height:1.9;overflow-wrap:anywhere}
+.imweb-content p{margin:0 0 10px}.imweb-content img{display:block;width:100%;height:auto;max-width:100%;margin:26px 0;object-fit:contain}
+.imweb-content a{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:640px){.imweb-project{padding:24px 20px 50px}.imweb-heading h1{font-size:23px}.imweb-content{font-size:13px}.imweb-content img{margin:18px 0}.pn{gap:20px}.pn a{overflow-wrap:anywhere;min-width:0;max-width:48%}}
