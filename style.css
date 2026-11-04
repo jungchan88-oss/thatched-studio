@@ -113,3 +113,6 @@ h1,h2,h3{font-family:var(--sans);font-weight:500;letter-spacing:-.025em;text-tra
 .furniture-editorial{padding-top:0;padding-bottom:56px}.furniture-projects{padding-top:32px}@media(max-width:640px){.furniture-editorial{padding-bottom:32px}.furniture-projects{padding-top:12px}}
 
 @media(max-width:640px){.cover-copy>.korean{align-self:stretch}}
+
+/* Quiet text navigation: no decorative arrows, short English introduction. */
+.cover-copy>.korean,.furniture-home .korean,.studio-note .korean{color:var(--muted);max-width:36em;line-height:1.8}.cover-copy>.text-link{font-size:15px;padding-bottom:4px}.section-heading h2 a:hover{opacity:.65}.section-heading h2 a:focus-visible{outline-offset:8px}.studio-note .korean+.korean{margin-top:16px}.coming-feature .korean{margin-bottom:0}.enquiry h2{margin-top:0}
