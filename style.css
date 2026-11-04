@@ -116,3 +116,7 @@ h1,h2,h3{font-family:var(--sans);font-weight:500;letter-spacing:-.025em;text-tra
 
 /* Quiet text navigation: no decorative arrows, short English introduction. */
 .cover-copy>.korean,.furniture-home .korean,.studio-note .korean{color:var(--muted);max-width:36em;line-height:1.8}.cover-copy>.text-link{font-size:15px;padding-bottom:4px}.section-heading h2 a:hover{opacity:.65}.section-heading h2 a:focus-visible{outline-offset:8px}.studio-note .korean+.korean{margin-top:16px}.coming-feature .korean{margin-bottom:0}.enquiry h2{margin-top:0}
+
+/* Furniture: brief English captions and one clear enquiry action. */
+.furniture-intro-copy .korean,.furniture-editorial figcaption .eyebrow,.furniture-projects .enquiry .korean{color:var(--muted)}.furniture-intro-copy .korean{line-height:1.8}.furniture-editorial .eyebrow{text-transform:none;letter-spacing:.02em}.furniture-projects .archive-grid .card-caption{display:grid;grid-template-columns:1fr;grid-template-rows:48px;min-height:0;padding:14px 0}.furniture-projects .card-caption>.index{display:none}.furniture-projects .archive-grid .card-caption h3{grid-column:1;grid-row:1;min-height:0;line-height:1.4}.furniture-collection .collection-price{margin-top:12px}.furniture-text-collections h3{font-size:22px}.enquiry .korean{color:var(--muted)}
+@media(max-width:640px){.furniture-projects .archive-grid .card-caption{grid-template-rows:42px;padding:12px 0}.furniture-editorial figcaption .text-link{font-size:13px}.furniture-intro-copy .text-link{margin-top:20px}.furniture-text-collections h3{font-size:20px}}
