@@ -127,3 +127,7 @@ h1,h2,h3{font-family:var(--sans);font-weight:500;letter-spacing:-.025em;text-tra
 
 /* Approved furniture A: quiet English titles with explicit Korean enquiries. */
 .furniture-intro h1{font-weight:400;font-size:30px;letter-spacing:-.035em}.furniture-intro-copy .korean{font-size:15px;line-height:1.9}.furniture-editorial figcaption h2{font-weight:400;font-size:22px;letter-spacing:-.025em}.furniture-projects .section-heading h2{font-size:24px;font-weight:400}.furniture-intro-copy .text-link,.furniture-editorial .text-link,.collection-price,.furniture-text-collections .text-link,.furniture-projects+.enquiry .text-link{font-size:14px;font-weight:400;letter-spacing:-.015em;white-space:nowrap}@media(max-width:640px){.furniture-intro h1{font-size:28px}.furniture-projects .section-heading h2{font-size:22px}}
+
+/* About introduction: restrained type proportional to the people and service details. */
+.about-intro{min-height:0;padding:80px 28px 72px}.about-intro h1{font-size:19px;font-weight:400;line-height:1.85;letter-spacing:-.02em;margin:22px 0 30px}.about-people p+p{margin-top:24px}
+@media(max-width:640px){.about-intro{min-height:0;padding:56px 22px}.about-intro h1{font-size:18px;line-height:1.85;margin:20px 0 28px}.about-people p+p{margin-top:22px}}
