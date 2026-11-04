@@ -124,3 +124,6 @@ h1,h2,h3{font-family:var(--sans);font-weight:500;letter-spacing:-.025em;text-tra
 /* Approved A: one quiet statement, with the brand retained in the header. */
 .cover-copy h1.cover-statement{font-size:25px;font-weight:400;line-height:1.55;letter-spacing:-.025em;margin:36px 0 0}.cover-copy h1.cover-statement+.text-link{margin-top:28px}
 @media(max-width:640px){.cover-copy h1.cover-statement{font-size:23px;line-height:1.55;margin:24px 0 0}.cover-copy h1.cover-statement+.text-link{margin-top:24px;margin-bottom:24px}}
+
+/* Approved furniture A: quiet English titles with explicit Korean enquiries. */
+.furniture-intro h1{font-weight:400;font-size:30px;letter-spacing:-.035em}.furniture-intro-copy .korean{font-size:15px;line-height:1.9}.furniture-editorial figcaption h2{font-weight:400;font-size:22px;letter-spacing:-.025em}.furniture-projects .section-heading h2{font-size:24px;font-weight:400}.furniture-intro-copy .text-link,.furniture-editorial .text-link,.collection-price,.furniture-text-collections .text-link,.furniture-projects+.enquiry .text-link{font-size:14px;font-weight:400;letter-spacing:-.015em;white-space:nowrap}@media(max-width:640px){.furniture-intro h1{font-size:28px}.furniture-projects .section-heading h2{font-size:22px}}
