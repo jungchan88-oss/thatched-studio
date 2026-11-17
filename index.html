@@ -79,10 +79,11 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 
 @media(max-width:760px){
   .top{padding:18px var(--g);flex-direction:column;align-items:stretch;gap:12px}.top nav{gap:0;justify-content:space-between;font-size:14px}.brand{font-size:16px;white-space:nowrap}
-  .stage:has(.main-house-hero.on){min-height:max(560px,calc(75vw + 320px))}
-  .main-house-hero img{position:absolute;top:94px;left:0;height:calc(100% - 320px);object-fit:contain}
+  .stage:has(.main-house-hero.on){height:calc(75vw + 340px);min-height:0}
+  .main-house-hero img{position:absolute;top:94px;left:0;height:75vw;object-fit:contain}
   .main-house-hero.on img{animation:none}
   .main-house-hero::after{content:none}
+  .main-house-hero .caption{top:calc(75vw + 114px);bottom:auto}
   .caption h2{font-size:clamp(38px,12vw,64px);margin:12px 0 14px}
   .caption{bottom:calc(var(--g) + 54px)}.ticks{left:var(--g);right:auto;bottom:calc(var(--g) + 6px)}.ticks button{width:38px}
   .intro,.close{grid-template-columns:1fr;gap:20px}.intro{padding:72px var(--g)}
