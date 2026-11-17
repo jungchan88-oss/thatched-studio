@@ -79,7 +79,7 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 
 @media(max-width:760px){
   .top{padding:18px var(--g);flex-direction:column;align-items:stretch;gap:12px}.top nav{gap:0;justify-content:space-between;font-size:14px}.brand{font-size:16px;white-space:nowrap}
-  .stage:has(.main-house-hero.on){height:calc(75vw + 340px);min-height:0}
+  .stage:has(.main-house-hero.on){height:calc(75vw + 340px + clamp(0px, 15vw - 57px, 57px));min-height:0}
   .main-house-hero img{position:absolute;top:94px;left:0;height:75vw;object-fit:contain}
   .main-house-hero.on img{animation:none}
   .main-house-hero::after{content:none}
