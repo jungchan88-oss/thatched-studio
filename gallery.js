@@ -24,4 +24,19 @@
     if (event.key === 'ArrowLeft') { event.preventDefault(); show(index - 1); }
     if (event.key === 'ArrowRight') { event.preventDefault(); show(index + 1); }
   });
+
+  const figure = dialog.querySelector('figure');
+  let swipeStart = null;
+  figure.addEventListener('pointerdown', event => {
+    if (event.pointerType !== 'touch') return;
+    swipeStart = { x: event.clientX, y: event.clientY };
+  });
+  figure.addEventListener('pointercancel', () => { swipeStart = null; });
+  figure.addEventListener('pointerup', event => {
+    if (!swipeStart) return;
+    const dx = event.clientX - swipeStart.x;
+    const dy = event.clientY - swipeStart.y;
+    swipeStart = null;
+    if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy)) show(index + (dx < 0 ? 1 : -1));
+  });
 })();

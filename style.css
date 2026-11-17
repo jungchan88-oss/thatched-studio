@@ -1,8 +1,3 @@
-@font-face{font-family:Pretendard;font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/pretendard-400.woff2') format('woff2')}
-@font-face{font-family:Pretendard;font-style:normal;font-weight:500;font-display:swap;src:url('assets/fonts/pretendard-500.woff2') format('woff2')}
-@font-face{font-family:Pretendard;font-style:normal;font-weight:600;font-display:swap;src:url('assets/fonts/pretendard-600.woff2') format('woff2')}
-@font-face{font-family:'Noto Serif KR';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/noto-serif-kr.ttf?v=priority') format('truetype')}
-@font-face{font-family:'Bodoni Moda';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/bodoni-moda.ttf') format('truetype')}
 
 :root{--paper:#f5f3ed;--ink:#302e29;--muted:#706c62;--line:#d5d1c6;--serif:'Bodoni Moda','Noto Serif KR',Georgia,serif;--sans:Pretendard,Arial,sans-serif}*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{background:var(--paper);color:var(--ink);font:14px/1.7 var(--sans)}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}img{display:block;max-width:100%;height:auto}a:focus-visible,button:focus-visible{outline:2px solid var(--ink);outline-offset:6px}.skip{position:absolute;top:-80px;left:20px;background:var(--ink);color:var(--paper);padding:12px;z-index:9}.skip:focus{top:10px}[hidden]{display:none!important}h1,h2,h3{font-weight:400}h1,h2{font-family:var(--serif);line-height:1.05;letter-spacing:-.035em}h1{font-size:50px}h2{font-size:34px}
 .site-header{max-width:1440px;margin:auto;padding:30px 5%;display:flex;align-items:flex-start;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font:22px/1.2 var(--serif);letter-spacing:-.02em}.brand span{display:block;font:10px var(--sans);letter-spacing:.08em;margin-top:7px;color:var(--muted)}.site-header nav{display:flex;gap:32px;padding-top:6px;font-size:12px}.site-header nav a{padding-bottom:3px;border-bottom:1px solid transparent}.site-header nav a:hover,.site-header nav a[aria-current]{border-color:var(--ink)}
@@ -137,3 +132,49 @@ h1,h2,h3{font-family:var(--sans);font-weight:500;letter-spacing:-.025em;text-tra
 
 /* Furniture collection preview */
 .furniture-pending{min-height:64vh;padding-top:76px;padding-bottom:100px}.furniture-pending h1{font:500 42px/1.2 var(--sans);letter-spacing:-.035em;margin:18px 0 0}.furniture-pending-note{border-top:1px solid var(--line);margin-top:76px;padding-top:32px}.furniture-pending-note h2,.furniture-home-pending h2{font:400 25px/1.45 var(--sans);letter-spacing:-.025em}.furniture-pending-note .korean,.furniture-home-pending .korean{font-size:14px;line-height:1.9;color:var(--muted);margin-top:18px}.furniture-home-pending{display:block;padding-top:44px;padding-bottom:44px}.furniture-home-pending h2{margin:20px 0}.furniture-home-pending .text-link{margin-top:24px}@media(max-width:640px){.furniture-pending{min-height:62vh;padding-top:48px;padding-bottom:70px}.furniture-pending h1{font-size:32px}.furniture-pending-note{margin-top:52px;padding-top:26px}.furniture-pending-note h2,.furniture-home-pending h2{font-size:21px}.furniture-pending-note .korean,.furniture-home-pending .korean{font-size:13px}}
+
+/* Full frame typography, page margins and navigation. */
+:root {
+  --paper: #f5f3ed;
+  --ink: #26241f;
+  --muted: #6f6b61;
+  --line: #d9d5ca;
+  --gutter: clamp(20px, 3.6vw, 60px);
+  --content: 1600px;
+}
+body { font-size: 15px; word-break: keep-all; }
+.site-header { padding: 18px 0; }
+.site-header .brand {
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: .05em;
+}
+.site-header nav { gap: 30px; }
+.site-header nav a { display: inline-flex; align-items: center; min-height: 44px; }
+.eyebrow, .site-footer { font-size: 12px; }
+.page-heading h1, .contact-sheet h1, .furniture-pending h1 {
+  font-size: clamp(32px, 4vw, 58px);
+  font-weight: 400;
+  letter-spacing: -.04em;
+}
+.archive-grid .card-image, .focus-gallery .photo-open, .studio-photo img {
+  background: #e9e5db;
+}
+.archive-grid .card-caption h3 { font-size: clamp(16px, 1.5vw, 22px); }
+.project-overview { max-width: 43em; margin: 16px 0 24px; color: var(--muted); }
+.project-number { margin-bottom: 8px; }
+.project-navigation { margin-bottom: 54px; }
+.project-navigation a { font-size: clamp(16px, 2vw, 24px); }
+.project-navigation span { font-size: 12px; }
+.studio-photo { padding-top: 0; padding-bottom: clamp(40px, 7vw, 96px); }
+.studio-photo img { width: 100%; height: auto; }
+.footer-contact { display: flex; gap: 20px; }
+.footer-contact a:hover { text-decoration: underline; }
+.photo-viewer figure { touch-action: pan-y; }
+
+@media (max-width: 760px) {
+  .site-header { flex-direction: column; align-items: stretch; gap: 6px; }
+  .site-header .brand { font-size: 16px; }
+  .site-header nav { justify-content: space-between; gap: 8px; }
+  .project-navigation { gap: 16px; margin-bottom: 36px; }
+}
